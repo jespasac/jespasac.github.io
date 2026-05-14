@@ -1,0 +1,9 @@
+<nav>
+  <a href="{{ '/' | relative_url }}" class="nav-name">Jordi Espasa</a>
+  <div class="nav-links">
+    <a href="{{ '/#about' | relative_url }}">About</a>
+    <a href="{{ '/writing/' | relative_url }}" {% if page.layout == 'post' or page.url == '/writing/' %}class="active"{% endif %}>Writing</a>
+    <a href="{{ '/#experience' | relative_url }}">Experience</a>
+    <a href="{{ '/#contact' | relative_url }}">Contact</a>
+  </div>
+</nav>

@@ -1,0 +1,211 @@
+---
+layout: default
+---
+
+<header class="hero">
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">FinOps Director · Cloud Economics · Technology-Finance Strategy</p>
+    <h1>Turning cloud<br>spend into <em>strategic</em><br>advantage.</h1>
+    <p class="hero-tagline">I bridge the gap between technology investment and business outcomes — making cloud economics a conversation Finance and Engineering can have together.</p>
+    <a href="#about" class="hero-cta">Learn more →</a>
+  </div>
+  <div class="hero-meta">
+    <p>Barcelona · Remote</p>
+    <p>AWS · GCP</p>
+    <p>FinOps Foundation</p>
+    <p>Charter Member</p>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <div class="section-label">About</div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I've spent <strong>20 years</strong> in technology, moving from the engine room — Linux systems, virtualisation, infrastructure — to the boardroom conversation about what technology actually costs and whether it's worth it.</p>
+      <p>That journey gave me something rare: I speak both languages. I understand how engineers think about architecture decisions, and I understand how CFOs think about returns. <strong>FinOps is precisely that intersection.</strong></p>
+      <p>At AVIV Group, I lead cloud financial management across Germany, Belgium, and France — optimising spend, building governance frameworks, and making the case to C-level that cloud economics is a strategic lever, not a line item to minimise.</p>
+      <p>My goal is to grow into a VP role where I can build and lead organisations that institutionalise this discipline at scale.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Years in technology</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">30%</div>
+        <div class="stat-label">YoY cloud cost reduction achieved</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Countries under management</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">7yr</div>
+        <div class="stat-label">FinOps Foundation Charter Member</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="writing-preview" id="writing">
+  <div class="section-label">Writing</div>
+  <h2>On cloud, finance,<br>and the gap between them.</h2>
+  <div class="articles-grid">
+    {% assign posts = site.posts | limit: 3 %}
+    {% if posts.size > 0 %}
+      {% for post in posts %}
+      <a href="{{ post.url | relative_url }}" class="article-card">
+        <div class="article-tag">{{ post.category }}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        <span class="article-arrow">↗</span>
+      </a>
+      {% endfor %}
+    {% else %}
+      <div class="article-card">
+        <div class="article-tag">Cloud Economics</div>
+        <h3>Why FinOps fails when it stays in Engineering</h3>
+        <p>Cost optimisation without Finance at the table is just expense cutting. Real FinOps is a governance discipline.</p>
+        <span class="article-arrow">↗</span>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Vendor Strategy</div>
+        <h3>The hidden cost of cloud contracts nobody reads</h3>
+        <p>Commitment erosion, auto-renewals, and discount structures that sound good until your usage changes.</p>
+        <span class="article-arrow">↗</span>
+      </div>
+      <div class="article-card">
+        <div class="article-tag">Leadership</div>
+        <h3>Making cloud spend a CFO conversation</h3>
+        <p>Unit economics, ROI frameworks, and how to translate infrastructure decisions into business language.</p>
+        <span class="article-arrow">↗</span>
+      </div>
+    {% endif %}
+  </div>
+  <a href="{{ '/writing/' | relative_url }}" class="writing-cta">All writing →</a>
+</section>
+
+<section class="experience" id="experience">
+  <div class="section-label">Experience</div>
+  <h2>A career built at<br>the intersection of<br>tech and business.</h2>
+  <div class="exp-list">
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-period">2023 — Present</div>
+        <div class="exp-company">AVIV Group</div>
+      </div>
+      <div class="exp-content">
+        <h3>FinOps Director</h3>
+        <p>Leading cloud financial management across a multi-country real estate tech group operating in Germany, Belgium, and France. Full ownership of AWS cost governance, vendor strategy, and cross-functional alignment with Engineering and Finance leadership.</p>
+        <div class="exp-achievements">
+          <span class="achievement">Multi-country operations</span>
+          <span class="achievement">AWS · GCP</span>
+          <span class="achievement">C-level advisory</span>
+          <span class="achievement">Vendor negotiation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-period">2021 — 2023</div>
+        <div class="exp-company">OLX Autos</div>
+      </div>
+      <div class="exp-content">
+        <h3>Head of SRE & FinOps</h3>
+        <p>Led distributed SRE teams across Barcelona and New Delhi. Combined reliability engineering with cloud financial management — ensuring systems ran efficiently and spend was governed with the same rigour as uptime.</p>
+        <div class="exp-achievements">
+          <span class="achievement">Global team leadership</span>
+          <span class="achievement">SRE · FinOps</span>
+          <span class="achievement">Multi-region</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-period">2019 — 2021</div>
+        <div class="exp-company">letgo · OLX Group</div>
+      </div>
+      <div class="exp-content">
+        <h3>Head of FinOps & Tech Procurement</h3>
+        <p>Built the FinOps and vendor management function from the ground up. Developed ROI analytical frameworks linking technology investment to business outcomes. Achieved 30% year-over-year cost reduction while serving as liaison between Finance, Legal, and Engineering.</p>
+        <div class="exp-achievements">
+          <span class="achievement">30% YoY cost reduction</span>
+          <span class="achievement">Vendor management programme</span>
+          <span class="achievement">ROI frameworks</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-period">2017 — 2019</div>
+        <div class="exp-company">Nestlé</div>
+      </div>
+      <div class="exp-content">
+        <h3>Supplier Manager — Hosting Services</h3>
+        <p>Managed strategic supplier relationships for global hosting infrastructure. Worked across Procurement, Legal, Security, and Business to deliver compliance and cost reduction at enterprise scale.</p>
+        <div class="exp-achievements">
+          <span class="achievement">Enterprise procurement</span>
+          <span class="achievement">Global scope</span>
+          <span class="achievement">SLA governance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <div class="exp-period">2011 — 2017</div>
+        <div class="exp-company">NetEnt</div>
+      </div>
+      <div class="exp-content">
+        <h3>IT Vendor & Procurement Manager · Infrastructure Manager</h3>
+        <p>Six years scaling from technical leadership of 14 engineers across 8 datacenters, to building the Vendor Management Office from scratch. Renegotiated major contracts achieving 12–50% cost reductions while expanding scope and value.</p>
+        <div class="exp-achievements">
+          <span class="achievement">VMO implementation</span>
+          <span class="achievement">Team of 15 engineers</span>
+          <span class="achievement">8 datacenters · 2 continents</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="philosophy">
+  <div class="section-label">Philosophy</div>
+  <div class="philosophy-grid">
+    <div>
+      <p class="philosophy-quote">"Cloud spend isn't a cost to minimise. It's an <em>investment to govern</em> — and that's a very different conversation."</p>
+    </div>
+    <div class="philosophy-pillars">
+      <div class="pillar">
+        <h4>Bridging languages</h4>
+        <p>Technology and Finance speak different dialects. The most valuable thing I do is translate — so both sides can make better decisions together.</p>
+      </div>
+      <div class="pillar">
+        <h4>Governance over restriction</h4>
+        <p>The goal isn't to stop teams from spending. It's to ensure every euro of cloud investment has accountability, visibility, and a clear business rationale.</p>
+      </div>
+      <div class="pillar">
+        <h4>Pragmatic over perfect</h4>
+        <p>Frameworks that live in spreadsheets don't change behaviour. I build systems that people actually use — because they make their work easier, not harder.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="section-label">Contact</div>
+    <h2>Let's talk cloud economics.</h2>
+    <p>I'm open to conversations about VP-level opportunities in FinOps, cloud financial leadership, or technology-finance strategy. Based in Barcelona, working globally and fully remote.</p>
+    <div class="contact-links">
+      <a href="mailto:{{ site.email }}" class="contact-link">Email ↗</a>
+      <a href="{{ site.linkedin }}" target="_blank" class="contact-link">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>

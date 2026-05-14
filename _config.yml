@@ -1,0 +1,17 @@
+title: Jordi Espasa
+description: FinOps Director · Cloud Economics · Technology-Finance Strategy
+author: Jordi Espasa Clofent
+email: jordi.espasa@fastmail.com
+linkedin: https://www.linkedin.com/in/jordiespasa/
+baseurl: ""
+url: "https://jespasac.github.io"
+
+permalink: /writing/:slug/
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

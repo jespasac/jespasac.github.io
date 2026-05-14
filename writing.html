@@ -1,0 +1,23 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+---
+
+<div class="page-header">
+  <div class="section-label">Writing</div>
+  <h1>On cloud, finance,<br>and the gap between them.</h1>
+  <p>Thinking out loud about FinOps, vendor strategy, and how technology investment connects to business outcomes.</p>
+</div>
+
+<div class="posts-list">
+  {% for post in site.posts %}
+  <a href="{{ post.url | relative_url }}" class="post-row">
+    <span class="post-date">{{ post.date | date: "%b %Y" }}</span>
+    <span class="post-title">{{ post.title }}</span>
+    <span class="post-tag">{{ post.category }}</span>
+  </a>
+  {% else %}
+  <p style="color: var(--ink-light); font-size: 0.9rem; padding: 3rem 0;">Articles coming soon.</p>
+  {% endfor %}
+</div>

@@ -102,6 +102,20 @@ header.hero { min-height: 80vh; display: flex; align-items: center; padding: 6re
 .exp-achievements { margin-top: 0.85rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .achievement { font-size: 0.72rem; letter-spacing: 0.05em; background: var(--gold-light); color: var(--ink-mid); padding: 0.25rem 0.75rem; border-radius: 2rem; }
 
+/* SPEAKING */
+.speaking { background: var(--bg); border-top: 1px solid var(--ink-faint); }
+.talks { margin-top: 1.5rem; }
+.talk { display: grid; grid-template-columns: 180px 1fr; gap: 3rem; padding: 1.75rem 0; border-bottom: 1px solid var(--ink-faint); }
+.talk:last-child { border-bottom: none; }
+.talk-meta { padding-top: 0.15rem; }
+.talk-event { font-size: 0.88rem; font-weight: 500; color: var(--ink); margin-bottom: 0.35rem; }
+.talk-place { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); }
+.talk-content h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; margin-bottom: 0.5rem; }
+.talk-content p { font-size: 0.88rem; color: var(--ink-mid); line-height: 1.7; max-width: 640px; }
+.talk-link { margin-top: 1.25rem; }
+.video-wrap { position: relative; width: 100%; max-width: 640px; aspect-ratio: 16 / 9; margin-top: 1.25rem; background: var(--ink); }
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
 /* PHILOSOPHY */
 .philosophy { background: var(--ink); color: var(--bg); }
 .philosophy .section-label { color: var(--gold); }
@@ -159,7 +173,7 @@ header.hero { min-height: 80vh; display: flex; align-items: center; padding: 6re
   .hero-meta { display: none; }
   .about-grid, .philosophy-grid { grid-template-columns: 1fr; gap: 2rem; }
   .articles-grid { grid-template-columns: 1fr; }
-  .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+  .exp-item, .talk { grid-template-columns: 1fr; gap: 0.5rem; }
   .post-row { grid-template-columns: 1fr; gap: 0.4rem; }
   .nav-links { gap: 1.5rem; }
 }

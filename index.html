@@ -5,16 +5,16 @@ layout: default
 <header class="hero">
   <div class="hero-line"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">FinOps Director · Cloud Economics · Technology-Finance Strategy</p>
-    <h1>Turning cloud<br>spend into <em>strategic</em><br>advantage.</h1>
-    <p class="hero-tagline">I bridge the gap between technology investment and business outcomes — making cloud economics a conversation Finance and Engineering can have together.</p>
+    <p class="hero-eyebrow">Cloud &amp; AI Economics · Technology-Finance Strategy · Procurement</p>
+    <h1>Turning cloud<br>and AI spend into<br><em>strategic</em> advantage.</h1>
+    <p class="hero-tagline">I govern technology spend as an investment. Cloud, AI and the contracts behind them, tied to business outcomes that Finance and Engineering can both act on.</p>
     <a href="#about" class="hero-cta">Learn more →</a>
   </div>
   <div class="hero-meta">
     <p>Barcelona · Remote</p>
-    <p>AWS · GCP</p>
-    <p>FinOps Foundation</p>
-    <p>Charter Member</p>
+    <p>AWS · GCP · GenAI</p>
+    <p>Speaker · FinOps X 2026</p>
+    <p>Speaker · AWS re:Invent 2026</p>
   </div>
 </header>
 
@@ -22,32 +22,33 @@ layout: default
   <div class="section-label">About</div>
   <div class="about-grid">
     <div class="about-text">
-      <p>I've spent <strong>20 years</strong> in technology, moving from the engine room — Linux systems, virtualisation, infrastructure — to the boardroom conversation about what technology actually costs and whether it's worth it.</p>
-      <p>That journey gave me something rare: I speak both languages. I understand how engineers think about architecture decisions, and I understand how CFOs think about returns. <strong>FinOps is precisely that intersection.</strong></p>
-      <p>At AVIV Group, I lead cloud financial management across Germany, Belgium, and France — optimising spend, building governance frameworks, and making the case to C-level that cloud economics is a strategic lever, not a line item to minimise.</p>
-      <p>My goal is to grow into a VP role where I can build and lead organisations that institutionalise this discipline at scale.</p>
+      <p>I started in the engine room (Linux systems, virtualisation, infrastructure) and moved to the boardroom conversation about what technology actually costs and whether it's worth it.</p>
+      <p>That journey gave me something rare: I speak both languages. I understand how engineers think about architecture decisions, and I understand how CFOs think about returns. <strong>Technology economics is precisely that intersection.</strong></p>
+      <p>At AVIV Group, I lead cloud financial management across Germany, Belgium and France: a chargeback model that puts cloud spend in the hands of the P&amp;L owners who generate it, unit economics that tie spend to business drivers, and more than $1M a year in sustained, tracked savings.</p>
+      <p><strong>Where I'm investing now: AI economics.</strong> GPU capacity, token consumption and inference are the fastest-growing and least governed lines in most technology budgets. The same primitives that made cloud spend accountable (allocation, unit economics, guardrails) are what will make AI spend accountable. AVIV was an early customer of the AWS FinOps Agent, and I'm building that layer now.</p>
     </div>
     <div class="about-stats">
       <div class="stat">
-        <div class="stat-num">20+</div>
-        <div class="stat-label">Years in technology</div>
+        <div class="stat-num">$1M+</div>
+        <div class="stat-label">Annual savings, sustained and tracked</div>
       </div>
       <div class="stat">
-        <div class="stat-num">30%</div>
-        <div class="stat-label">YoY cloud cost reduction achieved</div>
+        <div class="stat-num">$10M+</div>
+        <div class="stat-label">Annual cloud portfolio governed</div>
       </div>
       <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Countries under management</div>
+        <div class="stat-num">2</div>
+        <div class="stat-label">Global stages in 2026: FinOps X &amp; AWS re:Invent</div>
       </div>
       <div class="stat">
         <div class="stat-num">7yr</div>
-        <div class="stat-label">FinOps Foundation Charter Member</div>
+        <div class="stat-label">FinOps Foundation Charter Member &amp; mentor</div>
       </div>
     </div>
   </div>
 </section>
 
+{% if site.show_writing %}
 <section class="writing-preview" id="writing">
   <div class="section-label">Writing</div>
   <h2>On cloud, finance,<br>and the gap between them.</h2>
@@ -85,6 +86,52 @@ layout: default
   </div>
   <a href="{{ '/writing/' | relative_url }}" class="writing-cta">All writing →</a>
 </section>
+{% endif %}
+
+<section class="speaking" id="speaking">
+  <div class="section-label">Speaking</div>
+  <h2>On stage at FinOps X<br>and AWS re:Invent.</h2>
+  <div class="talks">
+
+    <div class="talk">
+      <div class="talk-meta">
+        <div class="talk-event">AWS re:Invent 2026</div>
+        <div class="talk-place">Las Vegas · December 2026</div>
+      </div>
+      <div class="talk-content">
+        <h3>Manage Cloud Costs and AI Spend with AWS Cost Management</h3>
+        <p>Session COP209, alongside the AWS Cloud Financial Management team and Corey Quinn (Duckbill). How AVIV Group, an early customer of the AWS FinOps Agent, uses agentic AI to scale cost governance across a large organisation without scaling the FinOps team.</p>
+        <div class="exp-achievements">
+          <span class="achievement">AI for FinOps</span>
+          <span class="achievement">FinOps for AI</span>
+          <span class="achievement">AWS FinOps Agent</span>
+        </div>
+        <a href="https://aws.amazon.com/blogs/aws-cloud-financial-management/use-ai-to-manage-your-ai-spend-your-guide-to-cloud-financial-management-sessions-at-reinvent-2026/" target="_blank" class="hero-cta talk-link">Session details ↗</a>
+      </div>
+    </div>
+
+    <div class="talk">
+      <div class="talk-meta">
+        <div class="talk-event">FinOps X 2026</div>
+        <div class="talk-place">San Diego · June 2026</div>
+      </div>
+      <div class="talk-content">
+        <p>Presented at the world's largest FinOps conference, hosted by the FinOps Foundation: an annual gathering of 2,500+ cloud financial management leaders, practitioners and executives.</p>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/-I6xy5CzqIE"
+            title="FinOps X 2026 — Jordi Espasa"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://youtu.be/-I6xy5CzqIE" target="_blank" class="hero-cta talk-link">Watch on YouTube ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <section class="experience" id="experience">
   <div class="section-label">Experience</div>
@@ -98,11 +145,11 @@ layout: default
       </div>
       <div class="exp-content">
         <h3>FinOps Director</h3>
-        <p>Leading cloud financial management across a multi-country real estate tech group operating in Germany, Belgium, and France. Full ownership of AWS cost governance, vendor strategy, and cross-functional alignment with Engineering and Finance leadership.</p>
+        <p>Leading cloud financial management across a multi-country real estate tech group operating in Germany, Belgium and France. Built the chargeback model and cloud unit economics that make business units accountable for what they spend. Owner of rate optimisation and vendor strategy. Now leading the move into AI cost governance, as an early customer of the AWS FinOps Agent.</p>
         <div class="exp-achievements">
-          <span class="achievement">Multi-country operations</span>
-          <span class="achievement">AWS · GCP</span>
-          <span class="achievement">C-level advisory</span>
+          <span class="achievement">$1M+/yr sustained savings</span>
+          <span class="achievement">Chargeback · Unit economics</span>
+          <span class="achievement">AI cost governance</span>
           <span class="achievement">Vendor negotiation</span>
         </div>
       </div>
@@ -175,34 +222,6 @@ layout: default
   </div>
 </section>
 
-
-<section class="speaking" id="speaking">
-  <div class="section-label">Speaking</div>
-  <h2>On stage at<br>FinOps X 2026.</h2>
-  <div class="speaking-grid">
-    <div class="speaking-video">
-      <div class="video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/-I6xy5CzqIE"
-          title="FinOps X 2026 — Jordi Espasa"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-    <div class="speaking-meta">
-      <div class="speaking-event">
-        <span class="speaking-tag">FinOps X 2026</span>
-        <span class="speaking-tag">San Diego, California</span>
-        <span class="speaking-tag">June 2026</span>
-      </div>
-      <p class="speaking-desc">Presented at the world's largest FinOps conference, hosted by the FinOps Foundation — an annual gathering of 2,500+ cloud financial management leaders, practitioners, and executives.</p>
-      <a href="https://youtu.be/-I6xy5CzqIE" target="_blank" class="hero-cta">Watch on YouTube ↗</a>
-    </div>
-  </div>
-</section>
-
 <section class="philosophy">
   <div class="section-label">Philosophy</div>
   <div class="philosophy-grid">
@@ -229,8 +248,8 @@ layout: default
 <section class="contact-section" id="contact">
   <div class="contact-inner">
     <div class="section-label">Contact</div>
-    <h2>Let's talk cloud economics.</h2>
-    <p>I'm open to conversations about VP-level opportunities in FinOps, cloud financial leadership, or technology-finance strategy. Based in Barcelona, working globally and fully remote.</p>
+    <h2>Let's talk cloud and AI economics.</h2>
+    <p>If you're building or scaling a technology economics function (cloud, SaaS and AI) under a CIO, CTO or CFO, that's a conversation I'm always open to. Based in Barcelona, working in English across international organisations, fully remote.</p>
     <div class="contact-links">
       <a href="mailto:{{ site.email }}" class="contact-link">Email ↗</a>
       <a href="{{ site.linkedin }}" target="_blank" class="contact-link">LinkedIn ↗</a>

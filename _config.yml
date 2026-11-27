@@ -1,5 +1,5 @@
 title: Jordi Espasa
-description: FinOps Director · Cloud Economics · Technology-Finance Strategy
+description: "Jordi Espasa leads technology economics: cloud, AI and the contracts behind them. Chargeback, unit economics and AI cost governance that connect technology spend to business value. Barcelona, remote."
 author: Jordi Espasa Clofent
 email: jordi.espasa@fastmail.com
 linkedin: https://www.linkedin.com/in/jordiespasa/
@@ -7,6 +7,10 @@ baseurl: ""
 url: "https://jespasac.github.io"
 
 permalink: /writing/:slug/
+
+# Writing section on the home page and in the menu.
+# Switch to true once the re:Invent piece is published.
+show_writing: false
 
 markdown: kramdown
 highlighter: rouge
